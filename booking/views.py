@@ -9,6 +9,6 @@ class BookingList(generics.ListCreateAPIView):
     serializer_class = BookingSerializer
 
 
-class BookingDetail(generics.RetriveUpdateDestroyAPIView):
+class BookingDetail(generics.RetrieveUpdateDestroyAPIView): # Retrieve 스펠링주의!
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
